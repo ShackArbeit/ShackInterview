@@ -21,9 +21,9 @@ function sortUserName(users){
          return 0
     })
 }
-// const user=[
-//     { firstName: 'Alice', lastName: '', customerID: '123', note: '', profession: 'student' },
-//     { firstName: 'Bob', lastName: 'Smith', customerID: '122', note: 'test', profession: 'engineer' },
-//     { firstName: 'Charlie', lastName: 'Brown', customerID: '124', note: '', profession: 'freelancer' },
-// ]
+const user=[
+     { firstName: 'Alice', lastName: '', customerID: '123', note: '', profession: 'student' },
+     { firstName: 'Bob', lastName: 'Smith', customerID: '122', note: 'test', profession: 'engineer' },
+     { firstName: 'Charlie', lastName: 'Brown', customerID: '124', note: '', profession: 'freelancer' },
+ ]
 console.log(sortUserName(user))
