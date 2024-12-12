@@ -39,7 +39,7 @@
             }
           } 
     // Example Three 
-          // We build a basic example for how interface apply to build a API by ExpressJs
+          // build a basic example for how interface apply to build a API by ExpressJs
           interface Product{
              id:number;
              name:string;
@@ -76,3 +76,65 @@
 
 // PartOne  Enum
        // An enum  is a way to define a set of named constants that can have either numeric or string values. 
+       // Example One, use the enum keyword to define an enum, here is a numeric enmu
+       enum Day {
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday,
+            Sunday,
+        }
+         // You can access the value of an enum member using the dot notation, or the index notation with brackets.
+         console.log(Day.Monday); // 0
+         console.log(Day["Monday"]); // 0
+      // Example Two,use the enum keyword to define an enum, here is a string enum enmu
+       enum Color {
+            Red = "red",
+            Orange = "orange",
+            Yellow = "yellow",
+            Green = "green",
+            Blue = "blue",
+            Indigo = "indigo",
+            Violet = "violet",
+     }
+         // You can access the value of an enum member using the dot notation, or the index notation with brackets.
+         console.log(Color.Red); // "red"
+         console.log(Color["Red"]); // "red"
+      // Example Three,build a basic example for how enum apply to build a API order list
+      enum OrderStatus {
+            Pending = "PENDING",
+            Processing = "PROCESSING",
+            Completed = "COMPLETED",
+            Canceled = "CANCELED",
+      }
+      function handleOrder(status:OrderStatus){
+         switch(status){
+            case OrderStatus.Pending:
+                console.log('Order is waiting to be processed...')
+                break
+            case OrderStatus.Processing:
+                console.log('Order is being processed...')
+                break
+            case OrderStatus.Completed:
+                console.log('Order completed!')
+                break
+            case OrderStatus.Canceled:
+                console.log('Order canceled')
+                break
+            default:
+                break
+         }
+      }
+
+// PartThree, What is the difference between 'Interface' and 'Enum' ?
+  // A. Purpose:
+    //  (a) Enum defines a fixed set of values, suitable for constants
+    //  (b) Interface defines object structures or type constraints
+ // B. Value Types:
+    //  (a) Enum contains concrete values, such as strings or numbers
+    //  (b) Interface does not contain concrete values, only describes properties and methods
+// C. Extensibility:
+   //   (a) Enum is not easily extensible, limited to the predefined set of values
+   //   (b) Interface supports extensibility (through inheritance or intersections)
