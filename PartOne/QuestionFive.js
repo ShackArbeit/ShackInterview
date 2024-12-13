@@ -54,3 +54,23 @@
         }
  
  */
+
+/**  Additional Instructions
+    *! If the above problematic Code is converted into functional component form, it will be as follows
+    // function Count() {
+    //     const [count, setCount] = React.useState(0);
+      
+    //     const handleAddCount = () => {
+    //       setCount(count + 1);
+    //       setCount(count + 1);
+    //       setCount(count + 1);
+    //     };
+      
+    //     return (
+    //       <div>
+    //         <h2>{count}</h2>
+    //         <button onClick={handleAddCount}>Add</button>
+    //       </div>
+    //     );
+    //   }
+*/ 
