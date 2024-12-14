@@ -1,0 +1,140 @@
+body {
+  display: block;
+  width: 100%; 
+  margin: 0; 
+  padding: 0;
+  position: relative;
+}
+* {
+  box-sizing: border-box;
+}
+.App {
+   width: 350px;
+   height: 240px; 
+   font-size: 16px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.calendar-root {
+  width: 100%;
+}
+
+/* | Sun | Mon | Tue | Wed | Thu | Fri | Sat  */
+.day-of-week-header-cell {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: white;
+  padding: 8px 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.days-of-week,
+.days-grid {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+}
+
+.days-grid {
+  height: 100%;
+  position: relative;
+  border: 2px solid rgb(211, 205, 198);
+  background-color: rgb(211, 205, 198);
+}
+
+.day-grid-item-container {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover State */
+.day-grid-item-container:hover {
+  background-color: #e6e6e6;
+}
+
+/* Non-Current Month */
+.day-grid-item-container:not(.current-month) .day-grid-item-header {
+  background-color: #757575;
+}
+
+/* Today State */
+.day-grid-item-container.today {
+  background-color: #ffff76;
+}
+
+/* Start date style */
+.day-grid-item-container.start-date {
+  /* background-color: #4caf50;  */
+  background-color: #d5d5ff;
+}
+
+/* End date style */
+.day-grid-item-container.end-date {
+  background-color: #ffffff;
+  color: white;
+}
+
+/* Select range style */
+.day-grid-item-container.selected-range {
+  background-color: #006edc;
+}
+/* Not select range style */
+.day-grid-item-container:not(selected-range) {
+  /* background-color: #c8e6c9; */
+  /* background-color: #006edc; */
+  background-color: white;
+}
+
+
+/* Position the day label within the day cell */
+.day-grid-item-container .day-grid-item-header {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  padding-bottom: 0;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.day-grid-item-container > .day-content-wrapper {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+.navigation-header {
+  display: flex;
+}
+
+.headerContainer {
+  width: 350px; 
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  font-size: 18px;
+}
+
+.clickButton {
+  width: 44px;
+  height: 44px;
+  background-color: white;
+  font-size: 18px;
+}
+
+.clickButton:hover {
+  background-color: #e6e6e6;
+}
+
+.navigation-header > * {
+  margin-right: 8px;
+}
