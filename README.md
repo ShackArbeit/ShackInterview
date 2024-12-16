@@ -6,7 +6,7 @@
 ## QuestionOne.js corresponds to question one,QuestionTwo.js corresponds to question two and so on...
 
 ## For 測驗2 it contains a vite React Project content
-## For For a detailed explanation of PartTwo, please click on the READEME.md file in its folder
+##  For a detailed explanation of PartTwo, please click on the READEME.md file in its folder
 ## The Demo for PartTwo please see this link **https://shackarbeit.github.io/InterviewCalendar/** 
 
 ## Tips for Problem Solving in Development
