@@ -2,6 +2,10 @@
 ## PartTwo mainly has three jsx files, namely App.jsx, calendar.jsx, and helper.jsx
 ## Mainly use "daysjs" & "PropTypes" plug-in and React Hook to dynamically display date changes and status control
 
+## How to watch Demo ?
+### For local terminal, cd calander folder => type "npm run dev"
+### Or just copy paste this link in your browser **https://shackarbeit.github.io/InterviewCalendar/** 
+
 ## For helper.jsx
 ### Define various functions to dynamically define the number of days to be displayed in each month and the day of the week that each date corresponds to.
 
