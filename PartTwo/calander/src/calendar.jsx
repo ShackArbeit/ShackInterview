@@ -16,7 +16,7 @@ import {
 
 Calendar.propTypes = {
   className: PropTypes.string,
-  yearAndMonth: PropTypes.arrayOf(PropTypes.number).isRequired, // e.g. [2021, 6] for June 2021
+  yearAndMonth: PropTypes.arrayOf(PropTypes.number).isRequired, 
   onYearAndMonthChange: PropTypes.func.isRequired,
   renderDay: PropTypes.func
 };

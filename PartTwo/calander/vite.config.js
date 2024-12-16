@@ -4,5 +4,10 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/ShackInterview/PartTwo/calander/',
+  test: {
+    // 👋 add the line below to add jsdom to vite
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: '.sec/tests/setupTests.js'
+  }
 })
