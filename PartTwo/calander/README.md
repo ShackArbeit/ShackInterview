@@ -15,6 +15,8 @@
 ## For App.jsx
 ### It is the main container, wrapping calendar.jsx. Its main function is to transmit props and css styles.
 
-### For Unit Test
+## For Unit Test
+### First cd calendar folder and then enter **npx vitest** and you will see the test results in the terminal.
+### I have taken a screenshot of the test results and placed them in the root directory of the calander folder
 
 

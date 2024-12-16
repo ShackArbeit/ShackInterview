@@ -1,6 +1,7 @@
-import { describe,it,except } from "vitest";
+import { describe,it,expect} from "vitest";
 import { isWeekendDay, getNumberOfDaysInMonth, createDaysForCurrentMonth,createDaysForNextMonth,
     createDaysForPreviousMonth, } from '../helpers'
+
 
 describe('helper functions',()=>{
     // Test for isWeekendDay function 
@@ -42,7 +43,7 @@ describe('helper functions',()=>{
             const previousMonthDays = createDaysForPreviousMonth(year, month, currentMonthDays);
             expect(previousMonthDays[0].dateString).toBe("2024-02-25"); 
             expect(previousMonthDays[0].isPreviousMonth).toBe(true);
-            except(previousMonthDays).toHaveLength(4)
+            expect(previousMonthDays).toHaveLength(5)
         })
     })
     // Test for createDaysForNextMonth function
@@ -52,9 +53,9 @@ describe('helper functions',()=>{
             const month = 3; 
             const currentMonthDays = createDaysForCurrentMonth(year, month);
             const nextMonthDays = createDaysForNextMonth(year, month, currentMonthDays);
-            except(nextMonthDays[0].dateString).toBe('2024-04-01');
-            except(nextMonthDays[0].isNextMonth).toBe(true)
-            expect(nextMonthDays).toHaveLength(2); 
+            expect(nextMonthDays[0].dateString).toBe('2024-04-01');
+            expect(nextMonthDays[0].isNextMonth).toBe(true)
+            expect(nextMonthDays).toHaveLength(6); 
         })
     })
 

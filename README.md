@@ -9,6 +9,16 @@
 ## For For a detailed explanation of PartTwo, please click on the READEME.md file in its folder
 ## The Demo for PartTwo please see this link **https://shackarbeit.github.io/InterviewCalendar/** 
 
+## Tips for Problem Solving in Development
+## 1. Consult Official Documentation and Articles
+- Refer to the official documentation for the technology or library.
+- Read articles and tutorials written by experts in related field.
 
+## 2. Experiment and Iterate
+- Try different approaches and solutions.
+
+## 3. Seek Help and Collaborate
+- Ask questions on forums or communities like Stack Overflow.
+- Utilize AI tools like GPT for assistance.
 
 
