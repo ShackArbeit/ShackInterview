@@ -11,7 +11,7 @@ export const daysOfWeek=[
     "Mon",
     "Tue",
     "Wed",
-    "Thur",
+    "Thu",
     "Fri",
     "Sat"
 ]
